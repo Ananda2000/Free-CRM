@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="33894" started-at="2019-03-31T11:33:50Z" finished-at="2019-03-31T11:34:24Z">
+  <suite name="Suite" duration-ms="33688" started-at="2019-03-31T14:15:03Z" finished-at="2019-03-31T14:15:37Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="33894" started-at="2019-03-31T11:33:50Z" finished-at="2019-03-31T11:34:24Z">
+    <test name="Test" duration-ms="33688" started-at="2019-03-31T14:15:03Z" finished-at="2019-03-31T14:15:37Z">
       <class name="Com.qa.crm.pageTest.LoginpageTest">
-        <test-method status="PASS" signature="startup()[pri:0, instance:Com.qa.crm.pageTest.LoginpageTest@4a87761d]" name="startup" is-config="true" duration-ms="7925" started-at="2019-03-31T11:33:50Z" finished-at="2019-03-31T11:33:58Z">
+        <test-method status="PASS" signature="startup()[pri:0, instance:Com.qa.crm.pageTest.LoginpageTest@4a87761d]" name="startup" is-config="true" duration-ms="7851" started-at="2019-03-31T14:15:03Z" finished-at="2019-03-31T14:15:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startup -->
-        <test-method status="FAIL" signature="firstTest()[pri:0, instance:Com.qa.crm.pageTest.LoginpageTest@4a87761d]" name="firstTest" duration-ms="342" started-at="2019-03-31T11:33:58Z" finished-at="2019-03-31T11:33:59Z">
+        <test-method status="FAIL" signature="firstTest()[pri:0, instance:Com.qa.crm.pageTest.LoginpageTest@4a87761d]" name="firstTest" duration-ms="251" started-at="2019-03-31T14:15:11Z" finished-at="2019-03-31T14:15:11Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='rd-navbar-brand']//span [text()='your business cloud partner']"}
@@ -22,8 +22,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'INCHLPT113', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.46.628402 (536cd7adbad73a..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:64525}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.86, webStorageEnabled: true}
-Session ID: e9a099c2e9f379baedb8a5eaff396567
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.46.628402 (536cd7adbad73a..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:61539}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.86, webStorageEnabled: true}
+Session ID: 6df5ad0edce160bc0d2e7182fe5c2fe5
 *** Element info: {Using=xpath, value=//div[@class='rd-navbar-brand']//span [text()='your business cloud partner']}]]>
             </message>
             <full-stacktrace>
@@ -35,8 +35,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'INCHLPT113', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.46.628402 (536cd7adbad73a..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:64525}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.86, webStorageEnabled: true}
-Session ID: e9a099c2e9f379baedb8a5eaff396567
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.46.628402 (536cd7adbad73a..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:61539}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.86, webStorageEnabled: true}
+Session ID: 6df5ad0edce160bc0d2e7182fe5c2fe5
 *** Element info: {Using=xpath, value=//div[@class='rd-navbar-brand']//span [text()='your business cloud partner']}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -58,7 +58,7 @@ at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(Def
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 at com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)
 at Com.qa.crm.page.Loginpage.checkingUI(Loginpage.java:39)
-at Com.qa.crm.pageTest.LoginpageTest.firstTest(LoginpageTest.java:25)
+at Com.qa.crm.pageTest.LoginpageTest.firstTest(LoginpageTest.java:26)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -90,19 +90,19 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- firstTest -->
-        <test-method status="PASS" signature="startup()[pri:0, instance:Com.qa.crm.pageTest.LoginpageTest@4a87761d]" name="startup" is-config="true" duration-ms="7078" started-at="2019-03-31T11:33:59Z" finished-at="2019-03-31T11:34:06Z">
+        <test-method status="PASS" signature="startup()[pri:0, instance:Com.qa.crm.pageTest.LoginpageTest@4a87761d]" name="startup" is-config="true" duration-ms="6673" started-at="2019-03-31T14:15:12Z" finished-at="2019-03-31T14:15:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startup -->
-        <test-method status="PASS" signature="validatepageTitle()[pri:0, instance:Com.qa.crm.pageTest.LoginpageTest@4a87761d]" name="validatepageTitle" duration-ms="279" started-at="2019-03-31T11:34:06Z" finished-at="2019-03-31T11:34:07Z">
+        <test-method status="PASS" signature="validatepageTitle()[pri:0, instance:Com.qa.crm.pageTest.LoginpageTest@4a87761d]" name="validatepageTitle" duration-ms="430" started-at="2019-03-31T14:15:19Z" finished-at="2019-03-31T14:15:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validatepageTitle -->
-        <test-method status="PASS" signature="startup()[pri:0, instance:Com.qa.crm.pageTest.LoginpageTest@4a87761d]" name="startup" is-config="true" duration-ms="8382" started-at="2019-03-31T11:34:07Z" finished-at="2019-03-31T11:34:15Z">
+        <test-method status="PASS" signature="startup()[pri:0, instance:Com.qa.crm.pageTest.LoginpageTest@4a87761d]" name="startup" is-config="true" duration-ms="7185" started-at="2019-03-31T14:15:19Z" finished-at="2019-03-31T14:15:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startup -->
-        <test-method status="PASS" signature="validlogincredentials()[pri:0, instance:Com.qa.crm.pageTest.LoginpageTest@4a87761d]" name="validlogincredentials" duration-ms="9346" started-at="2019-03-31T11:34:15Z" finished-at="2019-03-31T11:34:24Z">
+        <test-method status="PASS" signature="validlogincredentials()[pri:0, instance:Com.qa.crm.pageTest.LoginpageTest@4a87761d]" name="validlogincredentials" duration-ms="10683" started-at="2019-03-31T14:15:26Z" finished-at="2019-03-31T14:15:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validlogincredentials -->
