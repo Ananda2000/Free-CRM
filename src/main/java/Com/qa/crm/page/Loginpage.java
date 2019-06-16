@@ -1,7 +1,9 @@
 package Com.qa.crm.page;
 
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.http.auth.UsernamePasswordCredentials;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -13,7 +15,8 @@ import TestBase.testBase;
 
 public class Loginpage extends testBase{
 	
-	public Loginpage() {
+	
+	public Loginpage()  {
 		PageFactory.initElements(driver, this);
 	}
 	// Here using text()='' 
@@ -32,6 +35,14 @@ public class Loginpage extends testBase{
 	@FindBy(xpath="//a [text()='Classic CRM']")
 	WebElement classiccrm;
 	
+	@FindBy (xpath="//input [@name='username']")
+	WebElement usernameTextbox;
+	
+	@FindBy (xpath ="//input [@name='password']")
+	WebElement passwordTextbox;
+	
+	@FindBy (xpath="//input [@class='btn btn-small' and @type=\"submit\"]")
+	WebElement submitButton;
 	public void checkingUI() {
 		loginfirst.isDisplayed();
 		String login1 =loginfirst.getText();
@@ -56,16 +67,27 @@ public class Loginpage extends testBase{
 	}
 	
 	public String checkpagetitle() {
+	
 		String pagetitle = driver.getTitle();
 		System.out.println("The page title is:"+ pagetitle);
 		return pagetitle;
 	}
 	
-	public void validlogin() {
+	public Homepage validlogin(String un,String pw) throws IOException {
 		
 		clickfirstloginpage();
 		driver.manage().timeouts().pageLoadTimeout(15, TimeUnit.SECONDS);
 		clickclassCRM();
+		usernameTextbox.clear();
+		System.out.println("the user name is :"+un);
+		usernameTextbox.sendKeys(un);
+		passwordTextbox.clear();
+		System.out.println("the password is :"+pw);
+		passwordTextbox.sendKeys(pw);
+		submitButton.click();
+		return new Homepage();
+		
+		
 		
 		
 		

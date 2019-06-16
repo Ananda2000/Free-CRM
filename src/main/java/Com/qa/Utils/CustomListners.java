@@ -1,5 +1,7 @@
 package Com.qa.Utils;
 
+import java.io.IOException;
+
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -7,6 +9,11 @@ import org.testng.ITestResult;
 import TestBase.testBase;
 
 public class CustomListners  extends testBase implements ITestListener{
+
+	public CustomListners() throws IOException {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 
 	@Override
 	public void onTestStart(ITestResult result) {

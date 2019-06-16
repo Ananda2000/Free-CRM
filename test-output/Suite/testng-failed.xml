@@ -3,11 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <listeners>
     <listener class-name="Com.qa.Utils.ExtentReporterNG"/>
+    <listener class-name="Com.qa.Utils.CustomListners"/>
   </listeners>
   <test thread-count="5" name="Test(failed)">
+    <parameter name="uname" value="anandakr"/>
+    <parameter name="psward" value="test@123"/>
     <classes>
       <class name="Com.qa.crm.pageTest.LoginpageTest">
         <methods>
+          <include name="validatepageTitle"/>
           <include name="startup"/>
           <include name="firstTest"/>
         </methods>
