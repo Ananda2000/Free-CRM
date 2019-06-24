@@ -46,16 +46,16 @@ public class Loginpage extends testBase{
 	public void checkingUI() {
 		loginfirst.isDisplayed();
 		String login1 =loginfirst.getText();
-		System.out.println("++++++++1:"+login1);
+		//System.out.println("++++++++1:"+login1);
 		logoHeading.isDisplayed();
 		String Heading=logoHeading.getText();
-		System.out.println("++++++++2:"+Heading);
+		//System.out.println("++++++++2:"+Heading);
 		displaying_free.isDisplayed();
 		String displaygFree = displaying_free.getText();
-		System.out.println("+++++++++++++ 3:"+displaygFree);
+		//System.out.println("+++++++++++++ 3:"+displaygFree);
 		display_crm.isDisplayed();
 		String crmdisplay= display_crm.getText();
-		System.out.println("+++++++++ 4:" +crmdisplay);
+		//System.out.println("+++++++++ 4:" +crmdisplay);
 	}
 	
 	public void clickfirstloginpage() {
