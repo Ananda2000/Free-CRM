@@ -11,6 +11,9 @@ import org.openqa.selenium.remote.server.handler.ImplicitlyWait;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
+
+import com.sun.org.apache.bcel.internal.generic.RETURN;
+
 import org.openqa.selenium.support.FindBy;
 
 import TestBase.testBase;
@@ -41,6 +44,11 @@ public class Homepage extends testBase {
 	@FindBy (xpath ="//select[@name='slctYear']")
 	WebElement selyear;
 	
+	@FindBy (xpath ="//strong[contains(text(),'Monday Aug 26, 2013')]")
+	WebElement pathelement;
+	
+	@FindBy
+	
 	
 	// initialization of home page
 	
@@ -65,7 +73,7 @@ public class Homepage extends testBase {
 
 
 
-public void calendarSelection() {
+public String calendarSelection() {
 	System.out.println("Insided calendar selection class");
 	driver.switchTo().frame("mainpanel");
 	driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
@@ -83,7 +91,38 @@ public void calendarSelection() {
 	String text22 = text2.getText();
 	select1.selectByVisibleText("2013");
 	System.out.println("++++++++++++++++++++++++++++++-------------text2"+text22);
-//	return null;
 	
+	
+	//*[@id="crmcalendar"]/table/tbody/tr[2]/td/table/tbody/tr[5]/td[3]
+	//*[@id="crmcalendar"]/table/tbody/tr[2]/td/table/tbody/tr[4]/td[4]
+	
+	String beforexpath ="//*[@id=\"crmcalendar\"]/table/tbody/tr[2]/td/table/tbody/tr[";
+	String afterXpath ="]/td[";
+	final int weekdays =7; 
+	String text123=null;
+	//System.out.println("The value is +++++++++++"+val);
+	boolean flag = true;
+	for(int rnum =2; rnum <=7;rnum++) {
+		for(int cnum=1;cnum<=weekdays;cnum++) {
+			String val = driver.findElement(By.xpath(beforexpath+rnum+afterXpath+cnum+"]")).getText();
+			//System.out.println("The value is +++++++++++"+val);
+		String date="26";
+			if(val.equals(date) ) {
+				System.out.println("The value is +++++++++++"+val);
+				driver.findElement(By.xpath(beforexpath+rnum+afterXpath+cnum+"]")).click();
+			text123 = pathelement.getText();
+			System.out.println("The pathe elmeent &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&="+text123);
+				flag =false;
+				break;
+			}
+		}
+		if(flag == false) {
+			break;
+		}
+		
+	
+	}
+	return text123;
+//	return null;
 }
 }

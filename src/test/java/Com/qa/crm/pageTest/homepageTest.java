@@ -1,6 +1,7 @@
 package Com.qa.crm.pageTest;
 
 import org.testng.annotations.Test;
+import org.testng.Assert;
 import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
@@ -60,9 +61,8 @@ public void loginnameverification() {
 	@Test
 public void calenderselection() {
 		System.out.println("++++++++++++++++++++++++++++the calenderselection method is Home pageTest class");
-	homepagobjec.calendarSelection();
-	
-	
+	String date =homepagobjec.calendarSelection();
+	Assert.assertEquals(date, "Monday Aug 26, 2013","The data is in correct");
 	
 }
 }
