@@ -47,7 +47,7 @@ public class Homepage extends testBase {
 	@FindBy (xpath ="//strong[contains(text(),'Monday Aug 26, 2013')]")
 	WebElement pathelement;
 	
-	@FindBy
+	
 	
 	
 	// initialization of home page
